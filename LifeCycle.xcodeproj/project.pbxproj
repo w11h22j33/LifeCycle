@@ -13,7 +13,6 @@
 		AE95D7D618CEFD6A00019888 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE95D7D418CEFD6A00019888 /* InfoPlist.strings */; };
 		AE95D7D818CEFD6A00019888 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D7D718CEFD6A00019888 /* main.m */; };
 		AE95D7DC18CEFD6A00019888 /* ZYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D7DB18CEFD6A00019888 /* ZYAppDelegate.m */; };
-		AE95D7DF18CEFD6A00019888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE95D7DD18CEFD6A00019888 /* Main.storyboard */; };
 		AE95D7E218CEFD6A00019888 /* ZYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95D7E118CEFD6A00019888 /* ZYViewController.m */; };
 		AE95D7E418CEFD6A00019888 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE95D7E318CEFD6A00019888 /* Images.xcassets */; };
 		AE95D7EB18CEFD6A00019888 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE95D7EA18CEFD6A00019888 /* XCTest.framework */; };
@@ -44,7 +43,6 @@
 		AE95D7D918CEFD6A00019888 /* LifeCycle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LifeCycle-Prefix.pch"; sourceTree = "<group>"; };
 		AE95D7DA18CEFD6A00019888 /* ZYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYAppDelegate.h; sourceTree = "<group>"; };
 		AE95D7DB18CEFD6A00019888 /* ZYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYAppDelegate.m; sourceTree = "<group>"; };
-		AE95D7DE18CEFD6A00019888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE95D7E018CEFD6A00019888 /* ZYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYViewController.h; sourceTree = "<group>"; };
 		AE95D7E118CEFD6A00019888 /* ZYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYViewController.m; sourceTree = "<group>"; };
 		AE95D7E318CEFD6A00019888 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 			children = (
 				AE95D7DA18CEFD6A00019888 /* ZYAppDelegate.h */,
 				AE95D7DB18CEFD6A00019888 /* ZYAppDelegate.m */,
-				AE95D7DD18CEFD6A00019888 /* Main.storyboard */,
 				AE95D7E018CEFD6A00019888 /* ZYViewController.h */,
 				AE95D7E118CEFD6A00019888 /* ZYViewController.m */,
 				AE95D7E318CEFD6A00019888 /* Images.xcassets */,
@@ -231,7 +228,6 @@
 			files = (
 				AE95D7E418CEFD6A00019888 /* Images.xcassets in Resources */,
 				AE95D7D618CEFD6A00019888 /* InfoPlist.strings in Resources */,
-				AE95D7DF18CEFD6A00019888 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +277,6 @@
 				AE95D7D518CEFD6A00019888 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AE95D7DD18CEFD6A00019888 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE95D7DE18CEFD6A00019888 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		AE95D7F318CEFD6A00019888 /* InfoPlist.strings */ = {
@@ -382,7 +370,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LifeCycle/LifeCycle-Prefix.pch";
 				INFOPLIST_FILE = "LifeCycle/LifeCycle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,7 +385,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LifeCycle/LifeCycle-Prefix.pch";
 				INFOPLIST_FILE = "LifeCycle/LifeCycle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +453,7 @@
 				AE95D7FC18CEFD6A00019888 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE95D7FD18CEFD6A00019888 /* Build configuration list for PBXNativeTarget "LifeCycleTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +462,7 @@
 				AE95D7FF18CEFD6A00019888 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
