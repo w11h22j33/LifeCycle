@@ -63,7 +63,7 @@
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     
-    NSLog(@"%s-->\n\t\t\t\t\t\t\t\t\t%@",__FUNCTION__,@"恢复应用程序即将进入前台");
+    NSLog(@"%s-->\n\t\t\t\t\t\t\t\t\t%@",__FUNCTION__,@"从后台恢复应用程序即将进入前台");
     
 }
 
